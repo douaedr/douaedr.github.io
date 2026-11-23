@@ -24,7 +24,7 @@ window.PORTFOLIO = {
      Laisse null tant qu'il n'y a pas de fichier : le bouton n'apparaît pas. */
   cv: {
     fr: 'assets/cv/CV_Douae_Derouich_FR.pdf',
-    en: null, // ex. 'assets/cv/CV_Douae_Derouich_EN.pdf'
+    en: 'assets/cv/CV_Douae_Derouich_EN.pdf',
   },
 
   /* ---------- Compétences ---------- */
@@ -271,45 +271,6 @@ window.PORTFOLIO = {
         en: 'Recruitment platform: I built the Java Swing desktop module and contributed to the Candidate and Email services of the microservices architecture.',
       },
       tech: ['Java', 'Java Swing', 'POO', 'Microservices'],
-      repo: null, demo: null, youtube: null, shots: [], details: null,
-    },
-    {
-      id: 'ml',
-      title: 'Machine learning',
-      code: 'ACP · K-Means · XGBoost',
-      cats: ['ai', 'data'],
-      team: false,
-      context: { fr: 'Cours · EHEIM', en: 'Coursework · EHEIM' },
-      short: {
-        fr: 'Pipeline de détection de fraude, ACP, K-Means, arbres de décision, AdaBoost et XGBoost sur des jeux de données classiques.',
-        en: 'Fraud detection pipeline, PCA, K-Means, decision trees, AdaBoost and XGBoost on classic datasets.',
-      },
-      tech: ['Python', 'scikit-learn', 'NumPy', 'Matplotlib'],
-      repo: null, demo: null, youtube: null, shots: [], details: null,
-    },
-    {
-      id: 'ecommerce',
-      title: 'E-commerce Symfony',
-      code: 'panier · auth',
-      cats: ['fullstack'],
-      team: false,
-      context: { fr: 'Projet de cours', en: 'Course project' },
-      short: { fr: 'Boutique en ligne : entités, panier et authentification.', en: 'Online shop: entities, cart and authentication.' },
-      tech: ['PHP', 'Symfony'],
-      repo: 'https://github.com/douaedr/e-commerce', demo: null, youtube: null, shots: [], details: null,
-    },
-    {
-      id: 'api-rest',
-      title: 'API REST Spring Boot',
-      code: 'JDBC → REST',
-      cats: ['se'],
-      team: false,
-      context: { fr: 'Projet de cours', en: 'Course project' },
-      short: {
-        fr: "Transformation d'une application console JDBC en API REST complète (CRUD) avec base H2.",
-        en: 'Turned a JDBC console application into a complete REST API (CRUD) with an H2 database.',
-      },
-      tech: ['Java', 'Spring Boot', 'REST', 'H2'],
       repo: null, demo: null, youtube: null, shots: [], details: null,
     },
   ],

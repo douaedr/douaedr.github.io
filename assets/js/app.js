@@ -201,13 +201,6 @@
         '</div>' +
         '<div class="hero-card hero-in">' +
           '<div class="photo"><img src="' + esc(pr.photo) + '" alt="' + esc(pr.name) + '" width="640" height="800"><span class="loc">' + ic('pin', 14) + esc(pick(pr.location)) + '</span></div>' +
-          '<div class="report" aria-hidden="true">' +
-            '<p class="report-title mono">' + esc(h.cardTitle) + '</p>' +
-            '<div class="report-row report-headrow">' + h.cols.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join('') + '</div>' +
-            '<div class="report-row report-data"><span>' + esc(h.test) + '</span><span>' + (lang === 'fr' ? '1,15 g/L' : '1.15 g/L') + '</span><span>' + (lang === 'fr' ? '0,70 – 1,10' : '0.70 – 1.10') + '</span><span class="st-high">HIGH</span></div>' +
-            '<code class="report-json">{ "test": "' + esc(h.test) + '", "value": 1.15, "unit": "g/L", "status": "HIGH" }</code>' +
-          '</div>' +
-          '<p class="report-cap mono">' + esc(h.cardCap) + '</p>' +
         '</div>' +
       '</div>';
   }
