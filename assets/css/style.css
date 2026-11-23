@@ -211,7 +211,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .carousel { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 32%); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; scrollbar-width: thin; scrollbar-color: #c3cfd2 transparent; }
 .g-item { margin: 0; scroll-snap-align: start; }
 .g-item button { display: block; width: 100%; padding: 0; border: 0; border-radius: 14px; overflow: hidden; background: var(--line); }
-.g-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .4s; }
+.g-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 28%; transition: transform .4s; }
 .g-item button:hover img { transform: scale(1.04); }
 .g-item figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); display: flex; gap: 8px; align-items: baseline; }
 

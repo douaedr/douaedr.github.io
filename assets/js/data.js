@@ -379,10 +379,29 @@ window.PORTFOLIO = {
        cap: { fr: 'Équipe DSM au hackathon Nexus HealthTech', en: 'DSM team at the Nexus HealthTech Hackathon' } }, */
   gallery: [
     { src: 'assets/img/gallery/01-hackathon-nexus-healthtech.webp', tag: 'Hackathon',
-      cap: { fr: 'Hackathon Nexus HealthTech · équipe DSM, projet MindCare AI', en: 'Nexus HealthTech Hackathon · DSM team, MindCare AI project' } },
-    { src: 'assets/img/gallery/01b-hackathon-pitch.webp', tag: 'Hackathon',
+      cap: { fr: "Hackathon Nexus HealthTech · cheffe de l'équipe DSM", en: 'Nexus HealthTech Hackathon · DSM team leader' } },
+    { src: 'assets/img/gallery/02-hackathon-mindcare-ai.webp', tag: 'Hackathon',
+      cap: { fr: 'Présentation de MindCare AI au hackathon', en: 'Presenting MindCare AI at the hackathon' } },
+    { src: 'assets/img/gallery/03-hackathon-equipe.webp', tag: 'Hackathon',
+      cap: { fr: "L'équipe DSM : « Le code et le soin, ensemble »", en: 'The DSM team: “Code and care, together”' } },
+    { src: 'assets/img/gallery/04-hackathon-pitch.webp', tag: 'Hackathon',
       cap: { fr: "Pitch de l'équipe DSM (MindCare AI)", en: 'DSM team pitch (MindCare AI)' } },
+    { src: 'assets/img/gallery/05-forum-ingenieur-2025.webp', tag: 'Forum',
+      cap: { fr: "Forum professionnel de l'ingénieur, EHEI Oujda · édition 2025", en: "Engineers' Professional Forum, EHEI Oujda · 2025 edition" } },
+    { src: 'assets/img/gallery/06-forum-ingenieur-equipe.webp', tag: 'Forum',
+      cap: { fr: "Forum professionnel de l'ingénieur 2025, avec mes camarades", en: "Engineers' Professional Forum 2025, with classmates" } },
+    { src: 'assets/img/gallery/07-medays.webp', tag: 'MEDays',
+      cap: { fr: 'MEDays, The Southern Forum', en: 'MEDays, The Southern Forum' } },
+    { src: 'assets/img/gallery/08-medays-conference.webp', tag: 'MEDays',
+      cap: { fr: 'Conférence aux MEDays (photo : Institut Amadeus)', en: 'Conference at MEDays (photo: Institut Amadeus)' } },
+    { src: 'assets/img/gallery/09-medays-interview.webp', tag: 'MEDays',
+      cap: { fr: 'Interview radio aux MEDays', en: 'Radio interview at MEDays' } },
+    { src: 'assets/img/gallery/10-medays-delegation.webp', tag: 'MEDays',
+      cap: { fr: 'Rencontre officielle lors des MEDays', en: 'Official meeting during MEDays' } },
+    { src: 'assets/img/gallery/11-congres-logistique-cil25.webp', tag: 'Congrès',
+      cap: { fr: 'Congrès international de logistique CIL-25', en: 'CIL-25 International Logistics Congress' } },
   ],
+
 
   /* ---------- Formation ---------- */
   education: [
