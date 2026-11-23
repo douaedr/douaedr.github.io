@@ -278,6 +278,16 @@ window.PORTFOLIO = {
   /* ---------- Projets en cours ---------- */
   inProgress: [
     {
+      title: { fr: 'Analyse de sentiments de tweets en arabe et en darija', en: 'Sentiment analysis of Arabic and Darija tweets' },
+      since: { fr: 'Projet NLP · novembre 2026', en: 'NLP project · November 2026' },
+      text: {
+        fr: "Classification d'environ 18 000 tweets (corpus MAC, arabe standard et darija) en positif, neutre ou négatif. Normalisation et nettoyage de l'arabe, puis comparaison de six approches : TF-IDF avec Naive Bayes, régression logistique et SVM linéaire, embeddings FastText, un BiLSTM et DarijaBERT fine-tuné.",
+        en: 'Classification of about 18,000 tweets (MAC corpus, standard Arabic and Darija) as positive, neutral or negative. Arabic normalisation and cleaning, then a comparison of six approaches: TF-IDF with Naive Bayes, logistic regression and linear SVM, FastText embeddings, a BiLSTM and a fine-tuned DarijaBERT.',
+      },
+      tags: ['Python', 'scikit-learn', 'TensorFlow / Keras', 'Hugging Face Transformers', 'DarijaBERT', 'FastText', 'Google Colab'],
+      url: null,
+    },
+    {
       title: { fr: 'Surveillance IoT de frigos de laboratoire', en: 'IoT monitoring of laboratory fridges' },
       since: { fr: 'Cours · 2026', en: 'Coursework · 2026' },
       text: {
@@ -319,12 +329,18 @@ window.PORTFOLIO = {
       },
     },
     {
+      when: { fr: '2022 · France', en: '2022 · France' },
+      role: { fr: 'Stagiaire technicienne de laboratoire', en: 'Laboratory Technician Intern' },
+      org: { fr: 'XenTech · France', en: 'XenTech · France' },
+      points: { fr: [], en: [] },
+    },
+    {
       when: { fr: '2021 – 2022 · France', en: '2021 – 2022 · France' },
-      role: { fr: 'Laboratoires d’analyses', en: 'Medical laboratories' },
-      org: { fr: 'XenTech · Cerballiance Paris Sud', en: 'XenTech · Cerballiance Paris Sud' },
+      role: { fr: 'Aide de laboratoire', en: 'Laboratory Assistant' },
+      org: { fr: 'Cerballiance Paris Sud · Orly', en: 'Cerballiance Paris Sud · Orly' },
       points: {
-        fr: ['Stagiaire technicienne de laboratoire (XenTech, 2022)', "Aide de laboratoire dans un laboratoire d'analyses médicales (Cerballiance, 2021 – 2022)"],
-        en: ['Laboratory technician intern (XenTech, 2022)', 'Laboratory assistant in a medical testing lab (Cerballiance, 2021 – 2022)'],
+        fr: ["Aide de laboratoire dans un laboratoire d'analyses médicales"],
+        en: ['Laboratory assistant in a medical testing laboratory'],
       },
     },
   ],
@@ -345,30 +361,6 @@ window.PORTFOLIO = {
         en: ['Hackathon organised by CIRMSS in Oujda', 'Team of 3: computer engineering (AI) and medicine', 'Certificate of participation'],
       },
       project: 'mindcare-ai',
-    },
-    {
-      id: 'vulgariser',
-      tag: { fr: 'Vulgariser', en: 'Explain' },
-      when: { fr: '2026', en: '2026' },
-      title: { fr: 'Exposé de traitement d’images', en: 'Image processing talk' },
-      text: { fr: 'Amélioration et restauration des images, expliquées à des étudiants débutants, sans prérequis.', en: 'Image enhancement and restoration, explained to beginner students with no prerequisites.' },
-      points: null,
-    },
-    {
-      id: 'presenter',
-      tag: { fr: 'Présenter', en: 'Present' },
-      when: { fr: '2026', en: '2026' },
-      title: { fr: 'Simulation de négociation salariale', en: 'Salary negotiation simulation' },
-      text: { fr: "Présentation d'environ une heure en groupe de 3, avec vidéo et activité interactive.", en: 'About one hour, in a group of 3, with a video and an interactive activity.' },
-      points: null,
-    },
-    {
-      id: 'entreprendre',
-      tag: { fr: 'Entreprendre', en: 'Business' },
-      when: { fr: '2026', en: '2026' },
-      title: { fr: 'DOUCE et Rihla Scouts Maroc', en: 'DOUCE and Rihla Scouts Maroc' },
-      text: { fr: 'Marque de cosmétiques bio et agence de voyages scouts : business plan, pitchs, flyers, storyboard.', en: 'Organic cosmetics brand and scout travel agency: business plan, pitches, flyers, storyboard.' },
-      points: null,
     },
   ],
 
