@@ -379,8 +379,6 @@ window.PORTFOLIO = {
   gallery: [
     { src: 'assets/img/gallery/01-hackathon-nexus-healthtech.webp', tag: 'Hackathon',
       cap: { fr: "Hackathon Nexus HealthTech · cheffe de l'équipe DSM", en: 'Nexus HealthTech Hackathon · DSM team leader' } },
-    { src: 'assets/img/gallery/02-hackathon-mindcare-ai.webp', tag: 'Hackathon',
-      cap: { fr: 'Présentation de MindCare AI au hackathon', en: 'Presenting MindCare AI at the hackathon' } },
     { src: 'assets/img/gallery/03-hackathon-equipe.webp', tag: 'Hackathon',
       cap: { fr: "L'équipe DSM : « Le code et le soin, ensemble »", en: 'The DSM team: “Code and care, together”' } },
     { src: 'assets/img/gallery/04-hackathon-pitch.webp', tag: 'Hackathon',
