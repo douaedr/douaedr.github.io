@@ -106,10 +106,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .path { display: flex; flex-wrap: wrap; gap: 0; margin-top: 22px; font: 500 13.5px var(--mono); }
 .path li { display: inline-flex; align-items: center; padding: 6px 12px; background: var(--card); border: 1px solid var(--line); }
 .path li + li { border-left: 0; }
-.path li:first-child { border-radius: 8px 0 0 8px; }
-.path li:last-child { border-radius: 0 8px 8px 0; background: var(--ink); color: #fff; border-color: var(--ink); }
-.path li.p0::before, .path li.p1::before { content: ""; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; }
-.path li.p0::before { background: var(--ok); } .path li.p1::before { background: var(--sand); }
+.path li:first-child { border-radius: 8px 0 0 8px; background: var(--ink); color: #fff; border-color: var(--ink); }
+.path li:last-child { border-radius: 0 8px 8px 0; }
+.path li.p1::before, .path li.p2::before, .path li.p3::before { content: ""; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; }
+.path li.p1::before { background: var(--petrol-2); } .path li.p2::before { background: var(--sand); } .path li.p3::before { background: var(--ok); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 .socials { display: flex; gap: 10px; margin-top: 22px; }
 

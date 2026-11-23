@@ -14,13 +14,13 @@
         badge: 'Je recherche un stage PFE de 4 à 6 mois à partir de février 2027 · IA / data, backend ou full stack',
         role: 'Ingénieure IA & logiciel', sub: 'EHEIM Oujda · promotion 2027',
         lede: "Élève ingénieure en 5e année de génie informatique, option intelligence artificielle. Formée d'abord en biologie en France puis diplômée en littérature anglaise, je conçois des plateformes web complètes et des briques d'IA appliquée : extraction de documents, assistants RAG avec garde-fous, prévision et détection d'anomalies.",
-        path: ['Biologie', 'Lettres', 'Informatique'],
+        path: ['IA', 'Informatique', 'Lettres', 'Biologie'],
         projects: 'Voir mes projets', contact: 'Me contacter', cv: 'CV',
         cardTitle: 'bilan_sanguin.pdf → données', cardCap: 'MedExtract AI · exemple tiré de la documentation du projet',
         cols: ['Analyse', 'Valeur', 'Normes', 'Statut'], test: 'Glycémie',
       },
       about: {
-        num: '01', eyebrow: 'À propos', title: 'Biologie, lettres, informatique : un profil qui relie les mondes',
+        num: '01', eyebrow: 'À propos', title: 'IA, informatique, lettres et biologie : un profil qui relie les mondes',
         p: [
           "Je suis en cinquième et dernière année du cycle ingénieur en génie informatique à l'EHEIM Oujda, option intelligence artificielle. Mes stages m'ont fait travailler sur l'extraction de documents médicaux, une plateforme de devis, puis une application de pilotage avec un module d'IA pour un centre de contrôle technique DEKRA.",
           "Avant l'informatique, j'ai passé trois ans en France entre études de génie biologique et laboratoires d'analyses (Cerballiance, XenTech). C'est ce qui m'oriente vers l'IA appliquée à la santé, avec une règle simple : un outil d'aide, jamais un diagnostic.",
@@ -61,13 +61,13 @@
         badge: 'Looking for a 4–6 month PFE internship from February 2027 · AI / Data, Backend or Full Stack',
         role: 'AI & Software Engineer', sub: 'EHEIM Oujda · class of 2027',
         lede: 'Final-year computer engineering student specialising in artificial intelligence. First trained in biology in France, then graduated in English literature, I build complete web platforms and applied AI components: document extraction, RAG assistants with guardrails, forecasting and anomaly detection.',
-        path: ['Biology', 'Literature', 'Computer science'],
+        path: ['AI', 'Computer science', 'Literature', 'Biology'],
         projects: 'View my projects', contact: 'Contact me', cv: 'CV',
         cardTitle: 'blood_test.pdf → data', cardCap: 'MedExtract AI · example from the project documentation',
         cols: ['Test', 'Value', 'Range', 'Status'], test: 'Glucose',
       },
       about: {
-        num: '01', eyebrow: 'About', title: 'Biology, literature, computer science: a profile that connects worlds',
+        num: '01', eyebrow: 'About', title: 'AI, computer science, literature and biology: a profile that connects worlds',
         p: [
           'I am in the fifth and final year of the Computer Engineering programme at EHEIM Oujda, AI track. My internships took me from medical document extraction to a quote management platform, then to a management application with an AI module for a DEKRA vehicle inspection centre.',
           'Before computer science, I spent three years in France studying biological engineering and working in medical laboratories (Cerballiance, XenTech). This is what draws me to AI for health, with one simple rule: a support tool, never a diagnosis.',
