@@ -154,7 +154,14 @@ window.PORTFOLIO = {
       repo: 'https://github.com/douaedr/medextract-ia-chatbot',
       demo: null,
       youtube: null,
-      shots: [],
+      shots: [
+        { src: 'assets/img/projects/medextract/01-analyses-evolution.webp', cap: { fr: "Analyses : évolution d'une valeur (créatinine) et normes", en: 'Test results: trend of a value (creatinine) with its range' } },
+        { src: 'assets/img/projects/medextract/02-document-traite.webp', cap: { fr: 'Bilan importé et traité par le pipeline (statut AI_DONE)', en: 'Uploaded report processed by the pipeline (AI_DONE status)' } },
+        { src: 'assets/img/projects/medextract/03-export-excel.webp', cap: { fr: 'Export Excel des analyses avec statut NORMAL / HIGH / LOW', en: 'Excel export of the results with NORMAL / HIGH / LOW status' } },
+        { src: 'assets/img/projects/medextract/04-documents.webp', cap: { fr: 'Dépôt de documents (PDF, JPG, PNG)', en: 'Document upload (PDF, JPG, PNG)' } },
+        { src: 'assets/img/projects/medextract/05-connexion.webp', cap: { fr: 'Connexion', en: 'Sign-in page' } },
+        { src: 'assets/img/projects/medextract/06-inscription.webp', cap: { fr: 'Création de compte patient', en: 'Patient sign-up' } },
+      ],
       details: {
         fr: {
           overview: "Plateforme web d'extraction de données de bilans sanguins : OCR du document, extraction des analyses, comparaison aux normes, assistant RAG local et export Excel. Outil d'aide à la lecture et à la saisie, pas un système de diagnostic médical.",
