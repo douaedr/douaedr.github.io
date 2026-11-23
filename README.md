@@ -40,6 +40,8 @@ git push
 
 GitHub Pages met le site à jour en une ou deux minutes.
 
+Si l'ancienne version reste affichée, change le numéro `?v=…` des 3 liens `assets/…` dans `index.html` (par exemple `v=20261124`) : les navigateurs rechargeront alors les fichiers.
+
 ## Tester sur son PC
 
 Ouvre le dossier dans un terminal, puis :

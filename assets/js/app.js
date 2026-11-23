@@ -322,8 +322,6 @@
         '<div class="mail-line"><span class="mono">' + esc(pr.email) + '</span><button type="button" class="copy no-print" id="copy-mail">' + ic('copy', 15) + '<span>' + esc(c.copy) + '</span></button></div>' +
       '</div>' +
       '<div class="contact-side">' +
-        '<ul class="contact-facts"><li>' + ic('pin', 17) + '<div><span class="mono small">' + esc(c.location) + '</span>' + esc(pick(pr.location)) + '</div></li>' +
-        '<li>' + ic('plane', 17) + '<div><span class="mono small">' + esc(c.mobility) + '</span>' + esc(pick(pr.mobility)) + '</div></li></ul>' +
         cv +
         '<figure class="qr"><img src="assets/img/qr-portfolio.png" alt="QR code douaedr.github.io" width="132" height="132"><figcaption class="small">' + esc(c.qr) + '</figcaption></figure>' +
       '</div></div></div>';
