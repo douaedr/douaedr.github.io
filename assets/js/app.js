@@ -42,7 +42,7 @@
         nowEyebrow: 'En cours', nowTitle: 'Ce sur quoi je travaille en ce moment', nowBadge: 'En cours', open: 'Ouvrir',
       },
       modal: { overview: 'Présentation', problem: 'Problématique', objectives: 'Objectifs', solution: 'Solution', architecture: 'Architecture technique', tech: 'Technologies', contribution: 'Ma contribution', results: 'Résultats', shots: "Captures d'écran", video: 'Vidéo de démo', repo: 'Voir le code sur GitHub', close: 'Fermer' },
-      experience: { num: '04', eyebrow: 'Expérience', title: 'Stages et laboratoires', life: 'Événements et engagements', gallery: 'Galerie', prev: 'Photos précédentes', next: 'Photos suivantes' },
+      experience: { num: '04', eyebrow: 'Expérience', title: 'Stages et laboratoires', life: 'Événements et engagements', seeProject: 'Voir le projet', gallery: 'Galerie', prev: 'Photos précédentes', next: 'Photos suivantes' },
       education: { num: '05', eyebrow: 'Formation', title: 'Parcours académique' },
       certs: { num: '06', eyebrow: 'Certifications', title: 'Certifications et attestations', verify: 'Vérifier', view: 'Agrandir' },
       contact: {
@@ -89,7 +89,7 @@
         nowEyebrow: 'In progress', nowTitle: 'What I am working on now', nowBadge: 'In progress', open: 'Open',
       },
       modal: { overview: 'Overview', problem: 'Problem', objectives: 'Objectives', solution: 'Solution', architecture: 'Technical architecture', tech: 'Technologies', contribution: 'My contribution', results: 'Results', shots: 'Screenshots', video: 'Demo video', repo: 'View the code on GitHub', close: 'Close' },
-      experience: { num: '04', eyebrow: 'Experience', title: 'Internships and laboratories', life: 'Events and involvement', gallery: 'Gallery', prev: 'Previous photos', next: 'Next photos' },
+      experience: { num: '04', eyebrow: 'Experience', title: 'Internships and laboratories', life: 'Events and involvement', seeProject: 'View the project', gallery: 'Gallery', prev: 'Previous photos', next: 'Next photos' },
       education: { num: '05', eyebrow: 'Education', title: 'Academic background' },
       certs: { num: '06', eyebrow: 'Certificates', title: 'Certifications and certificates', verify: 'Verify', view: 'Enlarge' },
       contact: {
@@ -234,9 +234,9 @@
   function cover(p) {
     var cat = esc(t().projects.filters[p.cats[0]]);
     if (p.shots && p.shots.length && p.cover !== false) {
-      return '<div class="cover"><img src="' + esc(p.shots[0].src) + '" alt="' + esc(p.title) + '"><span class="cover-tag mono">' + cat + '</span></div>';
+      return '<div class="cover"><img src="' + esc(p.shots[0].src) + '" alt="' + esc(pick(p.title)) + '"><span class="cover-tag mono">' + cat + '</span></div>';
     }
-    return '<div class="cover cover-plain"><span class="cover-tag mono">' + cat + '</span><div class="cover-title">' + esc(p.title) + '<small class="mono">' + esc(p.code || '') + '</small></div></div>';
+    return '<div class="cover cover-plain"><span class="cover-tag mono">' + cat + '</span><div class="cover-title">' + esc(pick(p.title)) + '<small class="mono">' + esc(p.code || '') + '</small></div></div>';
   }
   function projectCard(p) {
     var pt = t().projects;
@@ -244,7 +244,7 @@
     return '<article class="project card reveal in">' + cover(p) +
       '<div class="project-body">' +
         '<p class="ctx mono">' + esc(pick(p.context)) + ' · ' + ic(p.team ? 'users' : 'user', 13) + ' ' + esc(p.team ? pt.team : pt.solo) + '</p>' +
-        '<h3>' + esc(p.title) + '</h3>' +
+        '<h3>' + esc(pick(p.title)) + '</h3>' +
         '<p class="muted">' + esc(pick(p.short)) + '</p>' +
         '<ul class="chips small">' + p.tech.map(function (x) { return '<li class="chip">' + esc(x) + '</li>'; }).join('') + '</ul>' +
         (n > 1 ? '<p class="count mono">' + ic('images', 14) + n + ' ' + esc(pt.shots) + '</p>' : '') +
@@ -285,7 +285,7 @@
     var acts = '<h3 class="sub-title reveal">' + esc(e.life) + '</h3><div class="acts">' + D.activities.map(function (a) {
       var pts = a.points ? pick(a.points) : null;
       return '<article class="card act reveal"><div class="act-top"><span class="tag">' + esc(pick(a.tag)) + '</span><span class="mono muted small">' + esc(pick(a.when)) + '</span></div><h4>' + esc(pick(a.title)) + '</h4><p class="muted">' + esc(pick(a.text)) + '</p>' +
-        (pts ? '<ul class="ticks small">' + pts.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' : '') + '</article>';
+        (pts ? '<ul class="ticks small">' + pts.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' : '') + (a.project ? '<button type="button" class="link act-link no-print" data-open="' + esc(a.project) + '">' + esc(e.seeProject) + ic('arrow', 15) + '</button>' : '') + '</article>';
     }).join('') + '</div>';
     var gal = '';
     if ((D.gallery || []).length) {
@@ -354,8 +354,8 @@
     var shots = (p.shots || []).length ? block(m.shots, '<div class="m-shots">' + p.shots.map(function (s, i) {
       return '<button type="button" data-lb="project:' + esc(p.id) + '" data-i="' + i + '"><img src="' + esc(s.src) + '" alt="' + esc(pick(s.cap)) + '" loading="lazy"><span class="small">' + esc(pick(s.cap)) + '</span></button>';
     }).join('') + '</div>') : '';
-    var video = p.youtube ? block(m.video, '<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(p.youtube) + '" title="' + esc(p.title) + '" allowfullscreen loading="lazy"></iframe></div>') : '';
-    modal.innerHTML = '<div class="m-inner"><header class="m-head"><div><p class="ctx mono">' + esc(pick(p.context)) + ' · ' + esc(p.team ? pt.team : pt.solo) + '</p><h2 id="modal-title">' + esc(p.title) + '</h2></div>' +
+    var video = p.youtube ? block(m.video, '<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(p.youtube) + '" title="' + esc(pick(p.title)) + '" allowfullscreen loading="lazy"></iframe></div>') : '';
+    modal.innerHTML = '<div class="m-inner"><header class="m-head"><div><p class="ctx mono">' + esc(pick(p.context)) + ' · ' + esc(p.team ? pt.team : pt.solo) + '</p><h2 id="modal-title">' + esc(pick(p.title)) + '</h2></div>' +
       '<button type="button" class="icon-btn" data-close aria-label="' + esc(m.close) + '">' + ic('close') + '</button></header><div class="m-body">' +
       block(m.overview, '<p>' + esc(d.overview) + '</p>') +
       '<div class="m-two">' + block(m.problem, '<p>' + esc(d.problem) + '</p>') + block(m.objectives, list(d.objectives)) + '</div>' +

@@ -23,7 +23,7 @@ window.PORTFOLIO = {
      Dépose les PDF dans assets/cv/ puis indique leur chemin ici.
      Laisse null tant qu'il n'y a pas de fichier : le bouton n'apparaît pas. */
   cv: {
-    fr: null, // ex. 'assets/cv/CV_Douae_Derouich_FR.pdf'
+    fr: 'assets/cv/CV_Douae_Derouich_FR.pdf',
     en: null, // ex. 'assets/cv/CV_Douae_Derouich_EN.pdf'
   },
 
@@ -94,6 +94,48 @@ window.PORTFOLIO = {
           architecture: 'FastAPI + SQLModel (SQLite) · React 19 / Vite / Recharts · AI: RapidOCR (ONNX), scikit-learn, pandas · PDF (ReportLab) and Excel (openpyxl) reports · PowerShell setup scripts.',
           contribution: 'Individual project: business analysis, design (UML, business rules), backend, frontend and AI module development, tests and documentation.',
           results: ['On 12 months of simulated data, the forecast reduces the error by about 16% compared with a naive baseline', 'All anomalies injected for the demo are detected', '33 automated tests (pytest)', 'Simulated data only: the figures still need to be confirmed on real data'],
+        },
+      },
+    },
+    {
+      id: 'mindcare-ai',
+      title: 'MindCare AI',
+      code: 'sécurité → RAG → LLM',
+      cats: ['ai', 'data'],
+      team: true,
+      context: { fr: 'Hackathon Nexus HealthTech · 20 – 21 nov. 2026', en: 'Nexus HealthTech Hackathon · 20 – 21 Nov 2026' },
+      short: {
+        fr: "Prototype d'assistant de psychoéducation en français : règles de sécurité d'abord, réponses sourcées par RAG et LLM local contrôlé par le code.",
+        en: 'French-language psychoeducation assistant prototype: safety rules first, sourced answers with RAG and a local LLM checked by code.',
+      },
+      tech: ['Python', 'FastAPI', 'sentence-transformers', 'scikit-learn', 'FAISS', 'Ollama', 'SQLAlchemy', 'pytest'],
+      repo: 'https://github.com/meryemammari23/mindcare-ai',
+      demo: null,
+      youtube: null,
+      shots: [
+        { src: 'assets/img/projects/mindcare-ai/01-accueil.webp', cap: { fr: 'Accueil', en: 'Home page' } },
+        { src: 'assets/img/projects/mindcare-ai/02-respiration.webp', cap: { fr: 'Exercice de respiration guidée', en: 'Guided breathing exercise' } },
+        { src: 'assets/img/projects/mindcare-ai/03-ressources.webp', cap: { fr: 'Ressources et numéros vérifiés', en: 'Resources and verified help numbers' } },
+        { src: 'assets/img/projects/mindcare-ai/04-structures.webp', cap: { fr: 'Urgences et structures par pays', en: 'Emergency services and structures by country' } },
+      ],
+      details: {
+        fr: {
+          overview: "Un assistant de psychoéducation en français réalisé en 2 jours pour le hackathon Nexus HealthTech (thème IA & santé). Principe : le LLM formule, le code contrôle, les sources justifient. C'est un prototype, ni un dispositif médical ni un outil de diagnostic.",
+          problem: "Un assistant conversationnel sur la santé mentale ne doit jamais improviser face à une urgence ni donner une information non sourcée.",
+          objectives: ["Détecter les situations urgentes avant toute étape d'IA", 'Répondre uniquement avec des sources citées et sous licence', 'Garder les conversations anonymes et confidentielles par défaut'],
+          solution: "Un Safety Gate déterministe analyse chaque message en premier et renvoie des numéros d'aide vérifiés (France, Maroc) en cas d'urgence. Viennent ensuite la détection du thème et du niveau de soutien, une estimation de l'émotion (embeddings MiniLM + régression logistique), un RAG sur 166 passages de l'OMS et du NHS, et un reflet empathique formulé par un LLM local et validé par le code.",
+          architecture: 'Backend FastAPI · Safety Gate à base de règles · recherche FAISS + BM25 · Ollama (LLM local) · historique chiffré uniquement avec consentement · espaces patient, professionnel et administration · tests automatisés (unitaires, sécurité, intégration, bout en bout).',
+          contribution: "Cheffe de l'équipe DSM : 3 personnes, deux élèves ingénieures en génie informatique option IA (EHEI Oujda) et un étudiant en médecine (FMP Oujda).",
+          results: ["Prototype présenté lors du pitch de l'équipe", 'Attestation de participation délivrée par le CIRMSS'],
+        },
+        en: {
+          overview: 'A French-language psychoeducation assistant built in 2 days for the Nexus HealthTech Hackathon (AI & Health track). Principle: the LLM phrases, the code controls, the sources justify. It is a prototype, not a medical device and not a diagnostic tool.',
+          problem: 'A conversational assistant on mental health must never improvise in an emergency or give unsourced information.',
+          objectives: ['Detect urgent situations before any AI step', 'Answer only with cited, licensed sources', 'Keep conversations anonymous and private by default'],
+          solution: 'A deterministic Safety Gate analyses every message first and returns verified help numbers (France, Morocco) in urgent cases. Then theme and support-level detection, an emotion estimate (MiniLM embeddings + logistic regression), a RAG over 166 WHO and NHS passages, and an empathic reflection from a local LLM that the code validates.',
+          architecture: 'FastAPI backend · rule-based Safety Gate · FAISS + BM25 retrieval · Ollama (local LLM) · encrypted history only with consent · patient, professional and admin spaces · automated tests (unit, safety, integration, end-to-end).',
+          contribution: 'Team leader of the DSM team: 3 people, two computer engineering students in the AI track (EHEI Oujda) and one medical student (FMP Oujda).',
+          results: ['Prototype presented during the team pitch', 'Certificate of participation issued by CIRMSS'],
         },
       },
     },
@@ -191,7 +233,11 @@ window.PORTFOLIO = {
       repo: 'https://github.com/douaedr/QuoteFlow',
       demo: null,
       youtube: null,
-      shots: [],
+      shots: [
+        { src: 'assets/img/projects/quoteflow/01-dashboard-admin.webp', cap: { fr: "Tableau de bord de l'administrateur", en: 'Administrator dashboard' } },
+        { src: 'assets/img/projects/quoteflow/02-connexion.webp', cap: { fr: 'Connexion', en: 'Sign-in page' } },
+        { src: 'assets/img/projects/quoteflow/03-devis-pdf.webp', cap: { fr: 'Devis PDF généré', en: 'Generated PDF quote' } },
+      ],
       details: {
         fr: {
           overview: 'Plateforme web multi-rôles (CLIENT / EMPLOYÉ / ADMIN) de gestion de devis, réalisée à 4.',
@@ -212,6 +258,20 @@ window.PORTFOLIO = {
           results: ['No secrets in the repository', 'Complete flow: request → priced quote → PDF → notification'],
         },
       },
+    },
+    {
+      id: 'recrutement',
+      title: { fr: 'Plateforme de recrutement', en: 'Recruitment platform' },
+      code: 'candidats · e-mails',
+      cats: ['se'],
+      team: true,
+      context: { fr: 'Projet de synthèse · oct. 2024 – mai 2025', en: 'Synthesis project · Oct 2024 – May 2025' },
+      short: {
+        fr: "Plateforme de recrutement : j'ai réalisé le module desktop en Java Swing et contribué aux services Candidate et Email de l'architecture microservices.",
+        en: 'Recruitment platform: I built the Java Swing desktop module and contributed to the Candidate and Email services of the microservices architecture.',
+      },
+      tech: ['Java', 'Java Swing', 'POO', 'Microservices'],
+      repo: null, demo: null, youtube: null, shots: [], details: null,
     },
     {
       id: 'ml',
@@ -282,7 +342,7 @@ window.PORTFOLIO = {
     {
       when: { fr: 'Févr. – août 2026', en: 'Feb – Aug 2026' },
       role: { fr: 'Stagiaire en développement logiciel / IA', en: 'Software Development / AI Intern' },
-      org: { fr: 'Estatmar', en: 'Estatmar' },
+      org: { fr: 'Estatmar · Oujda', en: 'Estatmar · Oujda' },
       points: {
         fr: ['MedExtract AI : extraction de bilans sanguins (OCR, LayoutLMv3) et assistant RAG local', 'QuoteFlow : gestion de devis en Spring Boot, devis PDF et workflows n8n', 'Projets en équipe de 4'],
         en: ['MedExtract AI: blood test extraction (OCR, LayoutLMv3) and local RAG assistant', 'QuoteFlow: quote management with Spring Boot, PDF quotes and n8n workflows', 'Team of 4'],
@@ -316,13 +376,14 @@ window.PORTFOLIO = {
       when: { fr: '20 – 21 nov. 2026', en: '20 – 21 Nov 2026' },
       title: { fr: 'Hackathon Nexus HealthTech (1re édition)', en: 'Nexus HealthTech Hackathon (1st edition)' },
       text: {
-        fr: 'Participante, équipe DSM : projet MindCare AI, thème Intelligence artificielle & santé.',
-        en: 'Participant, DSM team: MindCare AI project, Artificial Intelligence & Health track.',
+        fr: "Cheffe de l'équipe DSM : projet MindCare AI, thème Intelligence artificielle & santé.",
+        en: 'Team leader of the DSM team: MindCare AI project, Artificial Intelligence & Health track.',
       },
       points: {
-        fr: ['Hackathon organisé par le CIRMSS à Oujda', 'Équipe pluridisciplinaire : génie informatique (IA) et médecine'],
-        en: ['Hackathon organised by CIRMSS in Oujda', 'Multidisciplinary team: computer engineering (AI) and medicine'],
+        fr: ['Hackathon organisé par le CIRMSS à Oujda', 'Équipe de 3 : génie informatique (IA) et médecine', 'Attestation de participation'],
+        en: ['Hackathon organised by CIRMSS in Oujda', 'Team of 3: computer engineering (AI) and medicine', 'Certificate of participation'],
       },
+      project: 'mindcare-ai',
     },
     {
       id: 'vulgariser',
@@ -355,7 +416,12 @@ window.PORTFOLIO = {
      La section n'apparaît que s'il y a au moins une photo. Exemple :
      { src: 'assets/img/gallery/01-hackathon-nexus.webp', tag: 'Hackathon',
        cap: { fr: 'Équipe DSM au hackathon Nexus HealthTech', en: 'DSM team at the Nexus HealthTech Hackathon' } }, */
-  gallery: [],
+  gallery: [
+    { src: 'assets/img/gallery/01-hackathon-nexus-healthtech.webp', tag: 'Hackathon',
+      cap: { fr: 'Hackathon Nexus HealthTech · équipe DSM, projet MindCare AI', en: 'Nexus HealthTech Hackathon · DSM team, MindCare AI project' } },
+    { src: 'assets/img/gallery/01b-hackathon-pitch.webp', tag: 'Hackathon',
+      cap: { fr: "Pitch de l'équipe DSM (MindCare AI)", en: 'DSM team pitch (MindCare AI)' } },
+  ],
 
   /* ---------- Formation ---------- */
   education: [
@@ -376,13 +442,18 @@ window.PORTFOLIO = {
   /* ---------- Certifications et attestations ----------
      image : fichier dans assets/img/certificates/ (ou null) ; url : lien de vérification (ou null) */
   certifications: [
+    { name: { fr: 'Hackathon Nexus HealthTech · attestation de participation', en: 'Nexus HealthTech Hackathon · certificate of participation' }, issuer: 'CIRMSS · Oujda', date: { fr: 'nov. 2026', en: 'Nov 2026' }, image: 'assets/img/certificates/01-hackathon-nexus-healthtech.webp', url: null },
     { name: { fr: 'DELF B2 (français)', en: 'DELF B2 (French)' }, issuer: 'France Éducation international', date: null, image: null, url: null },
-    { name: { fr: 'Data Analytics with AI', en: 'Data Analytics with AI' }, issuer: 'SoloLearn', date: null, image: null, url: null },
-    { name: { fr: 'Java (intermédiaire)', en: 'Java (intermediate)' }, issuer: 'SoloLearn', date: null, image: null, url: null },
-    { name: { fr: 'SQL (intermédiaire)', en: 'SQL (intermediate)' }, issuer: 'SoloLearn', date: null, image: null, url: null },
-    { name: { fr: 'C++', en: 'C++' }, issuer: 'SoloLearn', date: null, image: null, url: null },
-    { name: { fr: 'Développement web · Angular', en: 'Web development · Angular' }, issuer: 'SoloLearn', date: null, image: null, url: null },
-    { name: { fr: 'Rédaction assistée par IA', en: 'AI-assisted writing' }, issuer: 'SoloLearn', date: null, image: null, url: null },
+    { name: { fr: 'Data Analytics with AI', en: 'Data Analytics with AI' }, issuer: 'SoloLearn', date: { fr: 'sept. 2026', en: 'Sep 2026' }, image: 'assets/img/certificates/02-sololearn-data-analytics-ai.webp', url: null },
+    { name: { fr: 'Java (intermédiaire)', en: 'Java Intermediate' }, issuer: 'SoloLearn', date: { fr: 'juin 2025', en: 'Jun 2025' }, image: 'assets/img/certificates/03-sololearn-java-intermediate.webp', url: null },
+    { name: { fr: 'SQL (intermédiaire)', en: 'SQL Intermediate' }, issuer: 'SoloLearn', date: { fr: 'avr. 2025', en: 'Apr 2025' }, image: 'assets/img/certificates/04-sololearn-sql-intermediate.webp', url: null },
+    { name: { fr: 'Angular', en: 'Angular' }, issuer: 'SoloLearn', date: { fr: 'juil. 2025', en: 'Jul 2025' }, image: 'assets/img/certificates/07-sololearn-angular.webp', url: null },
+    { name: { fr: 'Développement web', en: 'Web Development' }, issuer: 'SoloLearn', date: { fr: 'juin 2025', en: 'Jun 2025' }, image: 'assets/img/certificates/06-sololearn-web-development.webp', url: null },
+    { name: { fr: 'Introduction à C++', en: 'Introduction to C++' }, issuer: 'SoloLearn', date: { fr: 'juin 2025', en: 'Jun 2025' }, image: 'assets/img/certificates/05-sololearn-intro-cpp.webp', url: null },
+    { name: { fr: 'Rédaction assistée par IA (Write with AI)', en: 'Write with AI' }, issuer: 'SoloLearn', date: { fr: 'juin 2025', en: 'Jun 2025' }, image: 'assets/img/certificates/08-sololearn-write-with-ai.webp', url: null },
+    { name: { fr: 'Introduction à Java', en: 'Introduction to Java' }, issuer: 'SoloLearn', date: { fr: 'mai 2025', en: 'May 2025' }, image: 'assets/img/certificates/09-sololearn-intro-java.webp', url: null },
+    { name: { fr: 'Introduction à SQL', en: 'Introduction to SQL' }, issuer: 'SoloLearn', date: { fr: 'avr. 2025', en: 'Apr 2025' }, image: 'assets/img/certificates/10-sololearn-intro-sql.webp', url: null },
     { name: { fr: "Certificat d'expérimentation animale", en: 'Animal experimentation certificate' }, issuer: 'IUT de Créteil-Vitry', date: '2021', image: null, url: null },
   ],
+
 };

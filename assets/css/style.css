@@ -203,6 +203,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .sub-title { font-size: 26px; margin: 64px 0 22px; }
 .acts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .act { padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.act-link { border: 0; background: none; padding: 0; margin-top: auto; align-self: flex-start; }
 .act-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .gallery-head { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin: 64px 0 18px; }
 .gallery-head .sub-title { margin: 0; }
