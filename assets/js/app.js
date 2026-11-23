@@ -12,7 +12,7 @@
       nav: { about: 'À propos', skills: 'Compétences', projects: 'Projets', experience: 'Expérience', education: 'Formation', certifications: 'Certifications', contact: 'Contact' },
       hero: {
         badge: 'Je recherche un stage PFE de 4 à 6 mois à partir de février 2027 · IA / data, backend ou full stack',
-        role: 'Ingénieure IA & logiciel', sub: 'EHEIM Oujda · promotion 2027',
+        role: 'Élève ingénieure IA & logiciel', sub: 'EHEIM Oujda · promotion 2027',
         lede: "Élève ingénieure en 5e année de génie informatique, option intelligence artificielle. Formée d'abord en biologie en France puis diplômée en littérature anglaise, je conçois des plateformes web complètes et des briques d'IA appliquée : extraction de documents, assistants RAG avec garde-fous, prévision et détection d'anomalies.",
         path: ['IA', 'Informatique', 'Lettres', 'Biologie'],
         projects: 'Voir mes projets', contact: 'Me contacter', cv: 'CV',
@@ -22,7 +22,7 @@
       about: {
         num: '01', eyebrow: 'À propos', title: 'IA, informatique, lettres et biologie : un profil qui relie les mondes',
         p: [
-          "Je suis en cinquième et dernière année du cycle ingénieur en génie informatique à l'EHEIM Oujda, option intelligence artificielle. Mes stages m'ont fait travailler sur l'extraction de documents médicaux, une plateforme de devis, puis une application de pilotage avec un module d'IA pour un centre de contrôle technique DEKRA.",
+          "Je suis en cinquième et dernière année du cycle ingénieur en génie informatique à l'EHEIM Oujda, option intelligence artificielle. Mes stages m'ont fait travailler sur l'extraction de documents médicaux, une plateforme de devis, puis une application de pilotage avec un module d'IA pour un centre de contrôle technique DEKRA. En novembre 2026, j'ai mené l'équipe DSM en tant que cheffe d'équipe au hackathon Nexus HealthTech, avec MindCare AI, un assistant de psychoéducation conçu avec un étudiant en médecine.",
           "Avant l'informatique, j'ai passé trois ans en France entre études de génie biologique et laboratoires d'analyses (Cerballiance, XenTech). C'est ce qui m'oriente vers l'IA appliquée à la santé, avec une règle simple : un outil d'aide, jamais un diagnostic.",
           "Ma licence en littérature anglaise m'a appris à écrire, à argumenter et à rendre un sujet clair. Je m'en sers pour documenter mes projets, présenter à des publics non techniques et faire le lien entre équipes.",
         ],
@@ -59,7 +59,7 @@
       nav: { about: 'About', skills: 'Skills', projects: 'Projects', experience: 'Experience', education: 'Education', certifications: 'Certificates', contact: 'Contact' },
       hero: {
         badge: 'Looking for a 4–6 month PFE internship from February 2027 · AI / Data, Backend or Full Stack',
-        role: 'AI & Software Engineer', sub: 'EHEIM Oujda · class of 2027',
+        role: 'AI & Software Engineering Student', sub: 'EHEIM Oujda · class of 2027',
         lede: 'Final-year computer engineering student specialising in artificial intelligence. First trained in biology in France, then graduated in English literature, I build complete web platforms and applied AI components: document extraction, RAG assistants with guardrails, forecasting and anomaly detection.',
         path: ['AI', 'Computer science', 'Literature', 'Biology'],
         projects: 'View my projects', contact: 'Contact me', cv: 'CV',
@@ -69,7 +69,7 @@
       about: {
         num: '01', eyebrow: 'About', title: 'AI, computer science, literature and biology: a profile that connects worlds',
         p: [
-          'I am in the fifth and final year of the Computer Engineering programme at EHEIM Oujda, AI track. My internships took me from medical document extraction to a quote management platform, then to a management application with an AI module for a DEKRA vehicle inspection centre.',
+          'I am in the fifth and final year of the Computer Engineering programme at EHEIM Oujda, AI track. My internships took me from medical document extraction to a quote management platform, then to a management application with an AI module for a DEKRA vehicle inspection centre. In November 2026, I led the DSM team as team leader at the Nexus HealthTech Hackathon with MindCare AI, a psychoeducation assistant designed with a medical student.',
           'Before computer science, I spent three years in France studying biological engineering and working in medical laboratories (Cerballiance, XenTech). This is what draws me to AI for health, with one simple rule: a support tool, never a diagnosis.',
           'My degree in English literature taught me to write, argue and make a topic clear. I use it to document my projects, present to non-technical audiences and connect teams.',
         ],

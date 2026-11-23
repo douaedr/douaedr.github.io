@@ -229,7 +229,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .cert { padding: 18px; display: flex; flex-direction: column; gap: 12px; }
 .cert h3 { font-size: 17px; line-height: 1.3; }
 .cert-img { padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: var(--line); }
-.cert-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.cert-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
 
 /* Contact */
 .contact-card { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; padding: 48px; border-radius: 26px; background: var(--ink); color: #fff; box-shadow: 0 40px 70px -40px rgba(15,42,58,.7); position: relative; overflow: hidden; }
